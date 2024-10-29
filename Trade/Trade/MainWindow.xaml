@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Trade"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Товары для животных" Height="600" Width="1000" MinHeight="600" MinWidth="1000" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF76E383">
+            <TextBlock Text="Товары для животных" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <Image Source="/Resources/logo.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="210,0,0,0" />
+
+        </Grid>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

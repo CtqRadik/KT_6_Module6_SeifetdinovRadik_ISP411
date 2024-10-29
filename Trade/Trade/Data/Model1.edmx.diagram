@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="16697a890a3e41738ce49af12d9ffa88" Name="Diagram1">
+        <EntityTypeShape EntityType="TradeModel.Category" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.City" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.Manufacturer" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.Order" Width="1.5" PointX="10.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.OrderProduct" Width="1.5" PointX="12.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.PickPoint" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.ProductName" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.Role" Width="1.5" PointX="5.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.Status" Width="1.5" PointX="8" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.Street" Width="1.5" PointX="5.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.Supplaer" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeModel.User" Width="1.5" PointX="8" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="TradeModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_PickPoint_City" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_Order_PickPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_OrderProduct_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_PickPoint_Street" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_Product_ProductName" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK_Product_Supplaer" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeModel.FK__User__UserRole__45F365D3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
