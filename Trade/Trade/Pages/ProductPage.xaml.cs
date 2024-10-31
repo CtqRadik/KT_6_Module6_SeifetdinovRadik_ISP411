@@ -23,6 +23,12 @@ namespace Trade.Pages
         public ProductPage()
         {
             InitializeComponent();
+            ProductGrid.ItemsSource=Data.TradeEntities.GetContext().Product.ToList();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.LoginPage());
         }
     }
 }

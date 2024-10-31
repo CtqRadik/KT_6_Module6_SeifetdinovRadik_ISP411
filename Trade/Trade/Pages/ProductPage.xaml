@@ -8,7 +8,45 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ProductPage" Background="White">
 
-    <Grid>
-        <TextBlock Text="dfsdfjfsdfsdjfs"></TextBlock>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <RadioButton Content="По возрастанию"></RadioButton>
+            <RadioButton Content="По убыванию" VerticalAlignment="Center"></RadioButton>
+            <ComboBox Height="30" Width="130" HorizontalAlignment="Center" VerticalAlignment="Top"></ComboBox>
+            <TextBox Height="30" Width="130" HorizontalAlignment="Right" VerticalAlignment="Top"></TextBox>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListView x:Name="ProductGrid">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                <ColumnDefinition Width="350"></ColumnDefinition>
+                                <ColumnDefinition Width="200"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="{Binding ProductName1.Name}" FontWeight="Bold"></TextBlock>
+                                <TextBlock Text="{Binding ProductDescription, StringFormat={}Описание:{0} }" TextWrapping="Wrap"></TextBlock>
+                                <TextBlock Text="{Binding Manufacturer.ManufacturerName, StringFormat={}Производитель:{0}}"></TextBlock>
+                                <TextBlock Text="{Binding ProductCost, StringFormat={}Цена:{0}}"></TextBlock>
+                            </StackPanel>
+                            <Image Source="/Resources/picture.png" Grid.Column="0" Height="100" Width="100"/>
+                            <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ProductQuantityInStock, StringFormat={}Наличие:{0}}"></TextBlock>
+                           
+
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button x:Name="BackButton" Content="На главную" Click="BackButton_Click" ></Button>
+        </Grid>
     </Grid>
 </Page>
