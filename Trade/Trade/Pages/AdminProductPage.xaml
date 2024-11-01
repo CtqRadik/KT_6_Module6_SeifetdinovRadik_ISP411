@@ -17,7 +17,22 @@
         <Grid Grid.Row="0">
             <RadioButton Content="По возрастанию"></RadioButton>
             <RadioButton Content="По убыванию" VerticalAlignment="Center"></RadioButton>
-            <ComboBox Height="30" Width="130" HorizontalAlignment="Center" VerticalAlignment="Top"></ComboBox>
+            <ComboBox Height="30" Width="130" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <ComboBoxItem Content="Все производители"></ComboBoxItem>
+                <ComboBoxItem Content="Cat Chow"></ComboBoxItem>
+                <ComboBoxItem Content="Chappy"></ComboBoxItem>
+                <ComboBoxItem Content="Dog Chow"></ComboBoxItem>
+                <ComboBoxItem Content="Dreames"></ComboBoxItem>
+                <ComboBoxItem Content="Fancy Pets"></ComboBoxItem>
+                <ComboBoxItem Content="LIKER"></ComboBoxItem>
+                <ComboBoxItem Content="Nobby"></ComboBoxItem>
+                <ComboBoxItem Content="Pro Plan"></ComboBoxItem>
+                <ComboBoxItem Content="TitBit"></ComboBoxItem>
+                <ComboBoxItem Content="Triol"></ComboBoxItem>
+                <ComboBoxItem Content="trixie"></ComboBoxItem>
+                <ComboBoxItem Content="True Touch"></ComboBoxItem>
+                <ComboBoxItem Content="ZooM"></ComboBoxItem>
+            </ComboBox>
             <TextBox Height="30" Width="130" HorizontalAlignment="Right" VerticalAlignment="Top"></TextBox>
         </Grid>
         <Grid Grid.Row="1">
@@ -33,7 +48,7 @@
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="1">
                                 <TextBlock Text="{Binding ProductName1.Name}" FontWeight="Bold"></TextBlock>
-                                <TextBlock Text="{Binding ProductDescription, StringFormat={}Описание:{0} }" TextWrapping="Wrap"></TextBlock>
+                                <TextBlock Text="{Binding ProductDescription }" TextWrapping="Wrap"></TextBlock>
                                 <TextBlock Text="{Binding Manufacturer.ManufacturerName, StringFormat={}Производитель:{0}}"></TextBlock>
                                 <TextBlock Text="{Binding ProductCost, StringFormat={}Цена:{0}}"></TextBlock>
                             </StackPanel>

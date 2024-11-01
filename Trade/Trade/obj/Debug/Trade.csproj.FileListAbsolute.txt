@@ -44,8 +44,8 @@ C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\
 C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Trade.Properties.Resources.resources
 C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Trade.csproj.GenerateResource.cache
 C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Trade.csproj.CoreCompileInputs.cache
-C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Trade.csproj.Up2Date
 C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Trade.exe
 C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Trade.pdb
 C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Pages\AddPage.g.cs
 C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Pages\AddPage.baml
+C:\Users\comcuru\Desktop\1\KT_6_Module6_SeifetdinovRadik_ISP411\Trade\Trade\obj\Debug\Trade.csproj.CopyComplete

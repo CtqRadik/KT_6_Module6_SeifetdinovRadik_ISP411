@@ -29,5 +29,10 @@ namespace Trade.Pages
         {
             Classes.Manager.MainFrame.Navigate(new Pages.AdminProductPage());
         }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

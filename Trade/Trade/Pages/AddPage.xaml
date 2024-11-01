@@ -5,10 +5,49 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Trade.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1000"
       Title="AddPage">
 
     <Grid Background="White">
-        <Button x:Name="BackButton" Content="Назад" Click="BackButton_Click"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Категория:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="1" Grid.Column="0" Content="Количество на складе::" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="2" Grid.Column="0" Content="Еденица измерения:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="3" Grid.Column="0" Content="Поставщик:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="0" Grid.Column="2" Content="Стоимость:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="1" Grid.Column="2" Content="Изображение:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="2" Grid.Column="2" Content="Описание:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <ComboBox Grid.Row="0" Grid.Column="1" x:Name="CategoryComboBox">
+                <ComboBoxItem Content="Для животных"></ComboBoxItem>
+                <ComboBoxItem Content="Товары для кошек"></ComboBoxItem>
+                <ComboBoxItem Content="Товары для собак"></ComboBoxItem>
+            </ComboBox>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="CountTextBox" VerticalContentAlignment="Center"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="EdinTextBox" VerticalContentAlignment="Center"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="ManufacturerTextBox" VerticalContentAlignment="Center"></TextBox>
+            <TextBox Grid.Row="0" Grid.Column="3" x:Name="PriceTextBox" VerticalContentAlignment="Center"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="3" Height="50" TextWrapping="Wrap"  x:Name="DescriptionTextBox"></TextBox>
+        </Grid> 
+        <Grid Grid.Row="2">
+            <Button x:Name="BackButton" Content="Назад" Click="BackButton_Click" HorizontalAlignment="Right"></Button>
+            <Button x:Name="SaveButton" Content="Сохранить" Click="SaveButton_Click" HorizontalAlignment="Center"></Button>
+        </Grid>
     </Grid>
 </Page>
